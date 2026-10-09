@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TarjetaTaller from "../components/TarjetaTaller.astro";
+---
+
+<Layout titulo="Talleres | Espacio Cultural">
+  <section class="seccion">
+    <h2>Nuestros talleres</h2>
+    <p>Conoce las actividades que ofrecemos para despertar tu creatividad.</p>
+
+    <div class="grid-tarjetas">
+      <TarjetaTaller
+        nombre="Fotografía"
+        descripcion="Introducción a la composición y técnicas de fotografía digital."
+        imagen="src/img/fotografia.jpg"
+      />
+      <TarjetaTaller
+        nombre="Cerámica"
+        descripcion="Creación de objetos utilizando técnicas básicas de modelado."
+        imagen="src/img/ceramica.jpg"
+      />
+      <TarjetaTaller
+        nombre="Escritura creativa"
+        descripcion="Exploración de relatos breves y ejercicios de escritura."
+        imagen="src/img/escritura.jpg"
+      />
+      <TarjetaTaller
+        nombre="Ilustración"
+        descripcion="Desarrollo de habilidades de dibujo e ilustración digital."
+        imagen="src/img/ilustracion.jpg"
+      />
+    </div>
+  </section>
+</Layout>

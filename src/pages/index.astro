@@ -1,16 +1,36 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import TarjetaTaller from "../components/TarjetaTaller.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout titulo="Inicio | Espacio Cultural">
+  <section class="bienvenida">
+    <h2>Bienvenido a Espacio Cultural</h2>
+    <p>
+      Somos una organización cultural que ofrece talleres y actividades para
+      todas las personas que quieran aprender, crear y compartir.
+    </p>
+  </section>
+
+  <section class="seccion">
+    <h2>Talleres destacados</h2>
+
+    <div class="grid-tarjetas">
+      <TarjetaTaller
+        nombre="Fotografía"
+        descripcion="Introducción a la composición y técnicas de fotografía digital."
+        imagen="src/img/fotografia.jpg"
+      />
+      <TarjetaTaller
+        nombre="Cerámica"
+        descripcion="Creación de objetos utilizando técnicas básicas de modelado."
+        imagen="src/img/ceramica.jpg"
+      />
+      <TarjetaTaller
+        nombre="Ilustración"
+        descripcion="Desarrollo de habilidades de dibujo e ilustración digital."
+        imagen="src/img/ilustracion.jpg"
+      />
+    </div>
+  </section>
+</Layout>
